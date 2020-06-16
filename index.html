@@ -6,6 +6,7 @@
 <body>
   <script>
 
+    // determines computer choice by random number generation
     function computerPlay(){
         let randomNumber = Math.floor(Math.random() * 3 + 1); //assigns an int 1 to 3
        
@@ -22,8 +23,6 @@
             default:
                 break;
         }
-
-
     }
 
     function playRound(playerSelection, computerSelection){
@@ -105,8 +104,8 @@
     let computerSelection = computerPlay();
     let playerSelection = prompt("rock, paper, or scissors?").toLowerCase();
     let playerScore = 0;
-        let computerScore = 0;
-        let playerWins = false;
+    let computerScore = 0;
+    let playerWins = false;
 
 
     function game(){
